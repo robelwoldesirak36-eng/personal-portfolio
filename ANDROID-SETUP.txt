@@ -1,0 +1,17 @@
+ROBEL PORTFOLIO REDESIGN
+
+Folder structure:
+- index.html
+- css/style.css
+- js/script.js
+- assets/ (optional SVG images)
+
+Open the extracted folder in Acode, then open index.html and use Preview.
+Keep the css and js folders beside index.html. Do not move the files separately.
+
+Before publishing:
+1. Replace the GitHub and LinkedIn placeholder text with your real profile links.
+2. Review the skill levels and project descriptions so they accurately describe your experience.
+3. Test the theme switch, mobile menu, project filters, and contact form.
+
+The contact form uses mailto. It opens the visitor's email app and does not store or send messages through a website server.

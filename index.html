@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The personal portfolio of Robel Woldesirak, an Information Systems student at Wollo University.">
+  <meta name="theme-color" content="#073f36">
+  <title>Robel Woldesirak | Personal Portfolio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    // Apply the saved theme before the page paints to avoid a flash.
+    (() => {
+      const saved = localStorage.getItem("robel-theme");
+      const preferred = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.dataset.theme = saved || preferred;
+    })();
+  </script>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Robel Woldesirak home"><span class="brand-mark">R</span><span>Robel<span class="brand-dot">.</span></span></a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link nav-contact">Contact <span aria-hidden="true">↗</span></a>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme"><span class="theme-icon" aria-hidden="true">☾</span></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section container" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow reveal"><span class="status-dot"></span> INFORMATION SYSTEMS STUDENT</div>
+        <p class="hero-greeting reveal">Hello, I'm</p>
+        <h1 class="reveal">Robel <span>Woldesirak.</span></h1>
+        <h2 class="hero-role reveal">Learning today. <span>Building for tomorrow.</span></h2>
+        <p class="hero-description reveal">I’m an Information Systems student interested in creating useful digital experiences, understanding data, and exploring how technology can solve real-world problems.</p>
+        <div class="hero-actions reveal">
+          <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
+          <a class="button button-quiet" href="#contact">Get in touch</a>
+        </div>
+        <div class="hero-meta reveal"><span>Based in Ethiopia</span><i></i><span>Wollo University</span></div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
+        <div class="profile-card">
+          <div class="profile-top"><span class="mini-label">MY DIGITAL SPACE</span><span class="live-dot"></span></div>
+          <div class="profile-avatar" aria-label="Decorative profile initials">RW</div>
+          <p class="profile-name">Robel Woldesirak</p>
+          <p class="profile-caption">Information Systems</p>
+          <div class="profile-divider"></div>
+          <div class="profile-facts"><span>Curiosity</span><strong>Always on</strong></div>
+          <div class="profile-facts"><span>Current focus</span><strong>Web &amp; Data</strong></div>
+          <div class="profile-chips"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </div>
+        <div class="floating-note note-top"><span class="note-symbol">✦</span><span>Stay curious</span></div>
+        <div class="floating-note note-bottom"><span class="note-symbol">⌘</span><span>Keep creating</span></div>
+      </div>
+      <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-heading reveal"><p class="eyebrow">A LITTLE ABOUT ME</p><h2>Technology meets <span>curiosity.</span></h2></div>
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p class="lead">I’m building my path in technology one skill, one experiment, and one project at a time.</p>
+            <p>I study Information Systems at Wollo University, Kombolcha Institute of Technology. I enjoy learning how software, data, and people connect, and I’m working toward turning what I learn in class into practical solutions.</p>
+            <p>At this stage, I’m focused on strengthening my foundations, practicing consistently, and developing projects that show my progress.</p>
+          </div>
+          <div class="about-highlight reveal"><span class="highlight-icon">✧</span><p>My approach</p><h3>Learn with purpose.<br>Build with patience.</h3><span class="highlight-line"></span><small>Curiosity is where good work begins.</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="skills">
+      <div class="section-heading reveal"><p class="eyebrow">WHAT I'M LEARNING</p><h2>Skills in <span>progress.</span></h2><p class="section-intro">A realistic snapshot of my current abilities. These levels describe my learning stage, not formal certifications.</p></div>
+      <div class="skills-layout">
+        <div class="skills-panel reveal">
+          <div class="panel-heading"><h3>Technical skills</h3><span class="panel-tag">DEVELOPING</span></div>
+          <div class="skill-list">
+            <div class="skill-item"><div class="skill-label"><span>HTML</span><span class="skill-level">Foundational</span></div><div class="skill-track"><span class="skill-fill" data-level="35"></span></div></div>
+            <div class="skill-item"><div class="skill-label"><span>CSS</span><span class="skill-level">Foundational</span></div><div class="skill-track"><span class="skill-fill" data-level="30"></span></div></div>
+            <div class="skill-item"><div class="skill-label"><span>JavaScript</span><span class="skill-level">Learning</span></div><div class="skill-track"><span class="skill-fill" data-level="20"></span></div></div>
+            <div class="skill-item"><div class="skill-label"><span>Java</span><span class="skill-level">Learning</span></div><div class="skill-track"><span class="skill-fill" data-level="25"></span></div></div>
+            <div class="skill-item"><div class="skill-label"><span>SQL &amp; Databases</span><span class="skill-level">Developing</span></div><div class="skill-track"><span class="skill-fill" data-level="35"></span></div></div>
+            <div class="skill-item"><div class="skill-label"><span>Git &amp; GitHub</span><span class="skill-level">Learning</span></div><div class="skill-track"><span class="skill-fill" data-level="20"></span></div></div>
+          </div>
+        </div>
+        <div class="skills-side">
+          <div class="office-card reveal"><span class="side-icon">▦</span><div><h3>Microsoft Office</h3><p>Intermediate</p><div class="mini-track"><span style="width:65%"></span></div></div></div>
+          <div class="focus-card reveal"><p class="eyebrow">AREAS OF INTEREST</p><div class="interest-tags"><span>Web Development</span><span>Data Analytics</span><span>Artificial Intelligence</span><span>Cloud Computing</span><span>Cybersecurity</span><span>Software Engineering</span></div></div>
+          <p class="skill-note reveal">Skill bars are approximate self-assessments and will change as I gain more hands-on experience.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal"><p class="eyebrow">SELECTED PRACTICE</p><h2>Learning through <span>projects.</span></h2><p class="section-intro">These are learning activities and portfolio work, not commercial client projects.</p></div>
+        <div class="project-filters reveal" role="group" aria-label="Filter projects">
+          <button class="filter-button active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="web">Web</button>
+          <button class="filter-button" type="button" data-filter="database">Database</button>
+          <button class="filter-button" type="button" data-filter="programming">Programming</button>
+        </div>
+        <div class="projects-grid" id="projects-grid">
+          <article class="project-card reveal" data-category="web"><div class="project-visual visual-web"><span class="project-number">01</span><span class="visual-code">&lt;/&gt;</span><span class="visual-caption">WEB DESIGN</span></div><div class="project-content"><div class="project-type">PERSONAL PROJECT</div><h3>Personal Portfolio Website</h3><p>A responsive website presenting my background, skills, learning journey, and contact information.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><span class="project-status">In progress</span></div></article>
+          <article class="project-card reveal" data-category="database"><div class="project-visual visual-data"><span class="project-number">02</span><span class="visual-code">▤</span><span class="visual-caption">DATABASE PRACTICE</span></div><div class="project-content"><div class="project-type">UNIVERSITY PRACTICE</div><h3>Database Lab Exercises</h3><p>Practice with SQL queries, joins, subqueries, views, and relational database concepts through coursework.</p><div class="project-tags"><span>SQL</span><span>DBMS</span><span>Queries</span></div><span class="project-status">Learning activity</span></div></article>
+          <article class="project-card reveal" data-category="programming"><div class="project-visual visual-code"><span class="project-number">03</span><span class="visual-code">{ }</span><span class="visual-caption">PROGRAMMING</span></div><div class="project-content"><div class="project-type">UNIVERSITY PRACTICE</div><h3>Programming Exercises</h3><p>Small exercises that help me practice programming logic, problem-solving, and core Java concepts.</p><div class="project-tags"><span>Java</span><span>Logic</span><span>Practice</span></div><span class="project-status">Learning activity</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="education">
+      <div class="section-heading reveal"><p class="eyebrow">MY ACADEMIC PATH</p><h2>Education &amp; <span>learning.</span></h2></div>
+      <div class="timeline">
+        <article class="timeline-item reveal"><span class="timeline-dot"></span><div class="timeline-date">EXPECTED GRADUATION · 2028</div><h3>BSc in Information Systems</h3><p class="timeline-place">Wollo University · Kombolcha Institute of Technology</p><p>Studying information systems, databases, programming, and the role of technology in organizations.</p><span class="timeline-status">Currently studying</span></article>
+        <article class="timeline-item reveal"><span class="timeline-dot"></span><div class="timeline-date">CERTIFICATE</div><h3>Data Literacy and AI Literacy</h3><p class="timeline-place">ALX</p><p>Coursework focused on understanding data and developing foundational AI literacy.</p><span class="timeline-status">Completed</span></article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-container">
+        <div class="section-heading reveal"><p class="eyebrow">LET'S CONNECT</p><h2>Have an idea? <span>Let's talk.</span></h2><p class="section-intro">I’m open to learning opportunities, collaboration, and connecting with people in technology.</p></div>
+        <div class="contact-grid">
+          <div class="contact-info reveal"><a class="contact-link" href="mailto:robelwoldesirak36@gmail.com"><span class="contact-icon">✉</span><span><small>EMAIL ME</small><strong>robelwoldesirak36@gmail.com</strong></span><b>↗</b></a><div class="contact-link"><span class="contact-icon">⌘</span><span><small>GITHUB</small><strong>Add your GitHub profile URL</strong></span></div><div class="contact-link"><span class="contact-icon">in</span><span><small>LINKEDIN</small><strong>Add your LinkedIn profile URL</strong></span></div></div>
+          <form class="contact-form reveal" id="contact-form">
+            <div class="form-heading"><h3>Send a message</h3><span>I'll be glad to hear from you.</span></div>
+            <label for="name">Your name</label><input id="name" name="name" type="text" placeholder="Enter your name" required minlength="2">
+            <label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" required>
+            <label for="message">Message</label><textarea id="message" name="message" rows="4" placeholder="Write your message..." required minlength="10"></textarea>
+            <button class="button button-primary form-submit" type="submit">Prepare email <span aria-hidden="true">↗</span></button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite">This form opens your email app. It does not send messages to a website server.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="#home"><span class="brand-mark">R</span><span>Robel<span class="brand-dot">.</span></span></a><p>Designed and built with curiosity.</p><span>© <span id="year"></span> Robel Woldesirak</span></div></footer>
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>
